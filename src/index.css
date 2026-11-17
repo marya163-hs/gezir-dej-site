@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+body{
+  font-family: 'Vazirmatn', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+/* زوم آهسته روی عکس پس‌زمینه */
+@keyframes slowZoom {
+  from { transform: scale(1); }
+  to   { transform: scale(1.15); }
+}
+.hero-zoom { animation: slowZoom 20s ease-out infinite alternate; }
+
+/* ظاهر شدن متن هنگام باز شدن صفحه */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: none; }
+}
+.fade-up { animation: fadeUp .9s ease-out both; }
+
+/* شناور بودن دایره‌های نورانی */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-30px); }
+}
+.float { animation: float 6s ease-in-out infinite; }
+
+/* برای کسانی که انیمیشن را در سیستم خاموش کرده‌اند */
+@media (prefers-reduced-motion: reduce) {
+  .hero-zoom, .fade-up, .float { animation: none; }
+}
+
+@theme{
+  --font-vazir : 'Vazirmatn',sans-serif;
+}
