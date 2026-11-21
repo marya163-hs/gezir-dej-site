@@ -42,7 +42,7 @@ export default function Login() {
     'w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-300 outline-none focus:ring-2 focus:ring-cyan-400 transition'
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center px-4 py-12 overflow-hidden text-white">
+    <div className="relative min-h-screen flex flex-col items-center justify-start px-4 pt-24 pb-8 overflow-x-hidden text-white sm:justify-center sm:py-12">
 
       {/* پس‌زمینه: عکس با زوم آهسته */}
       <div
@@ -58,7 +58,7 @@ export default function Login() {
       {/* دکمه برگشت */}
       <Link
         to="/"
-        className="absolute top-6 right-6 z-10 bg-white/10 border border-white/20 backdrop-blur px-4 py-2 rounded-full text-sm hover:bg-white/20 transition"
+        className="absolute top-5 right-4 z-10 bg-white/10 border border-white/20 backdrop-blur px-4 py-2 rounded-full text-sm hover:bg-white/20 transition sm:top-6 sm:right-6"
       >
         بازگشت به صفحه اصلی
       </Link>
