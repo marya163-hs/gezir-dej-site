@@ -47,7 +47,7 @@ export default function Login() {
       {/* پس‌زمینه: عکس با زوم آهسته */}
       <div
         className="hero-zoom absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url('${base}/images/inside.jpg')` }}
+        style={{ backgroundImage: `url('${base}images/inside.jpg')` }}
       ></div>
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-blue-900/85 to-cyan-700/70"></div>
 
